@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Dentist_cabinet.Models.Client>
+
+@{
+    ViewData["Title"] = "Clients";
+}
+<style>
+   form a{
+        text-decoration: none;
+        color: white;
+        background-color: #a8742f;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+<h1 style="font-family:Gabriola;">Add a new client:</h1>
+
+<p style="font-family:Gabriola;font-size:150%;">
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr style="font-family:Gabriola;font-size:150%;">
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Illness)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alergy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Illness)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alergy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                <form>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                 </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

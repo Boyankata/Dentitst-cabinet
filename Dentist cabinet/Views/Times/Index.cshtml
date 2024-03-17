@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Dentist_cabinet.Models.Times>
+
+@{
+    ViewData["Title"] = "Times";
+}
+<style>
+    form a {
+        text-decoration: none;
+        color: white;
+        background-color: #a8742f;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+<h1 style="font-family:Gabriola;">Times for any procedure:</h1>
+
+
+    <a asp-action="Create">
+        <div class="button">
+           <p> Create New</p>
+        </div>
+    </a>
+
+<table class="table">
+    <thead>
+        <tr style="font-family:Gabriola;font-size:150%;">
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                    <form>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
