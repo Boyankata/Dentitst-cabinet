@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E83u76i0xGlbmuQVIKCQ7dLKJ2bg2zfiPAtsi2LHqlY=",
+  "Hash": "ltJs8kWb62AOAZGaixGjzrpx8yer8HqCdModLnNfW4s=",
   "Source": "Dentist cabinet",
   "BasePath": "_content/Dentist cabinet",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\boyan.petkov\\Desktop\\Dentist cabinet\\Dentist cabinet\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Dentist cabinet.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\boyan.petkov\\Desktop\\Dentist cabinet\\Dentist cabinet\\wwwroot\\css\\360_F_215904999_pHwPDXLmCg00u92E0yUh24ropSXJLDC0.jpg",
+      "SourceId": "Dentist cabinet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\boyan.petkov\\Desktop\\Dentist cabinet\\Dentist cabinet\\wwwroot\\",
+      "BasePath": "_content/Dentist cabinet",
+      "RelativePath": "css/360_F_215904999_pHwPDXLmCg00u92E0yUh24ropSXJLDC0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\360_F_215904999_pHwPDXLmCg00u92E0yUh24ropSXJLDC0.jpg"
     },
     {
       "Identity": "C:\\Users\\boyan.petkov\\Desktop\\Dentist cabinet\\Dentist cabinet\\wwwroot\\css\\IMG_20240317_140722.jpg",

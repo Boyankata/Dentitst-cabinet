@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\360_F_215904999_pHwPDXLmCg00u92E0yUh24ropSXJLDC0.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Dentist cabinet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Dentist cabinet</BasePath>
+      <RelativePath>css/360_F_215904999_pHwPDXLmCg00u92E0yUh24ropSXJLDC0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\360_F_215904999_pHwPDXLmCg00u92E0yUh24ropSXJLDC0.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\IMG_20240317_140722.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Dentist cabinet</SourceId>
