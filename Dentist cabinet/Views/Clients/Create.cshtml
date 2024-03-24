@@ -40,15 +40,28 @@
                 <input asp-for="Phone" class="form-control" />
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div  class="form-group">
+                <input style=" text-decoration: none;
+        color: white;
+        background-color: #a8742f;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 75%" type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div style="font-family:Gabriola;font-size:150%;">
-    <a asp-action="Index">Back to List</a>
+    <a style=" text-decoration: none;
+        color: white;
+        background-color: #a8742f;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

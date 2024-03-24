@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "Delete";
 }
+<div style="font-family:Gabriola;font-size:150%;">
+
 
 <h1>Delete</h1>
 
@@ -48,10 +50,17 @@
             @Html.DisplayFor(model => model.Phone)
         </dd>
     </dl>
-    
+    </div>
+</div>
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a style=" text-decoration: none;
+        color: white;
+        background-color: #a8742f;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" asp-action="Index">Back to List</a>
     </form>
-</div>
+
